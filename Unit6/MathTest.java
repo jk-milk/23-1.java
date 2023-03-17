@@ -1,4 +1,4 @@
-package Unit5;
+package Unit6;
 public class MathTest {
     public static void main(String[] args) {
         int sum;

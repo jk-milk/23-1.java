@@ -1,4 +1,4 @@
-package Unit5;
+package Unit6;
 public class Test {
     public static void main(String[] args) {
         String s1 = "동해물과 백두산이"; // new String("동해물과 백두산이");

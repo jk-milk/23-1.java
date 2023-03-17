@@ -1,4 +1,4 @@
-package Unit5;
+package Unit6;
 public class Person {
     /*
      * member variable은 특별한 이유가 없는 한 private로 만들어라.
