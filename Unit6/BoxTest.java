@@ -1,4 +1,5 @@
-package Unit6;
+package unit6;
+
 public class BoxTest {
     public static void main(String[] args) {
         
@@ -21,6 +22,8 @@ public class BoxTest {
         System.out.println("두 번째 박스의 부피: " + b2.getVolume());
 
         Box largerBox = Box.whoIsLargerBox(b1, b2);
+        boolean result = b1.isSameBox(b2);
+        System.out.println("박스1과 박스2는 같다?:"+result);
 
         System.out.println("더 큰 박스의 부피: " + largerBox.getVolume());
     }

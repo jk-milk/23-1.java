@@ -1,4 +1,4 @@
-package Unit6;
+package unit6;
 public class SafeArray {
     private int a[];
 

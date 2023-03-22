@@ -1,4 +1,4 @@
-package Unit6;
+package unit6;
 public class Car {
     String color;
     int gear;

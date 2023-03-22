@@ -1,4 +1,4 @@
-package Unit6;
+package unit6;
 public class MyMathTest {
     public static void main(String[] args) {
         MyMath obj = new MyMath();

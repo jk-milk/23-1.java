@@ -1,4 +1,4 @@
-package Unit6;
+package unit6;
 public class TimeTest {
     public static void main(String[] args) {
         Time time1 = new Time();

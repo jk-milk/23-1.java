@@ -1,4 +1,4 @@
-package Unit6;
+package unit6;
 public class CircleTest {
     public static void main(String[] args) {
         Point p = new Point(25, 78);
