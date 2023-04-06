@@ -1,4 +1,4 @@
-package sort;
+package unit7.polymorphism;
 import java.util.Random;
 
 public class Test2 {
