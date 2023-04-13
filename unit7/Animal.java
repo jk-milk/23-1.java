@@ -25,6 +25,6 @@ public class Animal {
     }
 
     void sleep() {
-        System.out.println("sleep()가 호출되었읍");
+        System.out.println("sleep()가 호출되었음");
     }
 }
