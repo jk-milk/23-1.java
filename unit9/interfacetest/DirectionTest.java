@@ -1,4 +1,4 @@
-package unit9.interfacetest;
+package interfacetest;
 
 public class DirectionTest implements Direction {
   public static void main(String[] args) {

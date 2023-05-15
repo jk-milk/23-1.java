@@ -1,4 +1,4 @@
-package unit9.interfacetest;
+package interfacetest;
 
 interface MyInterface {
   static void print(String msg) {

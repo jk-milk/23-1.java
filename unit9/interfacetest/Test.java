@@ -1,4 +1,4 @@
-package unit9.interfacetest;
+package interfacetest;
 
 public class Test {
   public static void main(String[] args) {

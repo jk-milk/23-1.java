@@ -1,4 +1,4 @@
-package unit9.interfacetest;
+package interfacetest;
 
 public class SamsungTV implements AdvancedRemoteControl {
 

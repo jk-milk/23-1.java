@@ -1,4 +1,4 @@
-package unit9.interfacetest;
+package interfacetest;
 
 interface MyInterface {
   public void myMethod1();

@@ -1,4 +1,4 @@
-package unit9.interfacetest;
+package interfacetest;
 
 class MyCar {
   int speed;

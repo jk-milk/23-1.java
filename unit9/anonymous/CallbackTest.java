@@ -1,4 +1,4 @@
-package unit9.interfacetest.anonymous;
+package anonymous;
 
 import java.util.Scanner;
 

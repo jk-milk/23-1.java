@@ -1,6 +1,6 @@
-package unit9.interfacetest.anonymous;
+package anonymous;
 
-import unit9.interfacetest.RemoteControl;
+import interfacetest.RemoteControl;
 
 public class CallbackTest2 {
   public void remoteControl(RemoteControl rc) {

@@ -1,4 +1,4 @@
-package unit9.interfacetest;
+package interfacetest;
 
 public interface Direction {
   // interface에 정의된 멤버 변수는 모두 상수이삳.
