@@ -16,5 +16,20 @@ public class Test {
     // 인터페이스인데 오직 하나의 추상 메소드를 가지는 인터페이스는
     // 람다로 구현할 수 있다. 
     t.test((s)->{System.out.println(s);});
+
+    sum(100, 21, 323, (n1, n2)->n1+n2);
   }
+
+  // 인터페이스
+  interface Add {
+    int addNum(int n1, int n2);
+  }
+
+  public static int sum(int n1, int n2, int n3, Add add) {
+    int result = add.addNum(n1, n2);
+    result = add.addNum(result, n3);
+    System.out.println(result);
+    return result;
+  }
+
 }
