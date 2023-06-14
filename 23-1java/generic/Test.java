@@ -5,7 +5,7 @@ public class Test {
     // IntBox ib1 = new IntBox();
     // ib1.setValue(10);
     // // System.out.println(ib1.getValue());
-    
+
     // IntBox ib2 = new IntBox();
     // ib2.setValue(20);
 
@@ -14,8 +14,8 @@ public class Test {
 
     // StrBox sb1 = new StrBox();
     // sb1.setValue("동해물과 ");
-  
-    // StrBox sb2 =  new StrBox();
+
+    // StrBox sb2 = new StrBox();
     // sb2.setValue("백두산이");
 
     // String result = sb1.getValue() + sb2.getValue();
@@ -38,6 +38,13 @@ public class Test {
     Object v = strBox.getValue();
     int idx = ((String)v).indexOf("우리나라");
     System.out.println(((String)v).substring(idx));
-    
+
+    int val = (int)strBox.getValue();
+    System.out.println("프로그램을 종료합니다.");
+
+    /* 문제점 */
+    /*
+     * 값을 빼서 쓸 때 명시적 타입 캐스팅(형변환)을 해야 한다. => 귀찮다. 런타임 오류 발생 가능
+     */
   }
 }

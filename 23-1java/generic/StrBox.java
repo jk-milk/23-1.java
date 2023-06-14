@@ -10,5 +10,4 @@ public class StrBox {
   public void setValue(String value) {
     this.value = value;
   }
-
 }

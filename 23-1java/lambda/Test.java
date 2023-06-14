@@ -31,11 +31,11 @@ public class Test {
     // printPersons(list, new CheckPersonFemale10to20());
 
     // CheckPerson 인터페이스를 implements 하는 클래스를 하나 생성해서
-    // printPersons 메소드를 호출해라.
-    // 단, 이 메소드에 의해 출력되는 Person 객체는 성별이 남자인 객체이어야 한다.
-    // printPersons(list, new CheckPersonMale());
+    // printPersons 메소드를 호출해라. 
+    // 단, 이 메소드의 의해 출력되는 Person 객체는 성별이 남자인 객체이어야 한다. 
+    // printPersons(list, new CheckMale());
 
-    // 위와 똑같이 성별이 남자인 객체만 출력하도록
+    // 위와 똑같이 성별이 남자인 객체만 출력하도록 
     // printPersons 메서드를 호출하되, 무명클래스를 이용해봐라.
     // CheckPerson 인터페이스를 구현하는 무명클래스를 생성해 printPersons 메서드를 호출하면 된다.
     // 클래스 선언과(정의와) 객체생성을 동시에 할 수 있는 방법이 무명클래스 이잖아..
@@ -44,38 +44,41 @@ public class Test {
     //     return p.getGender() == Sex.MALE;
     //   }
     // });
-    // 오직 하나의 추상메소드만 가지는 인터페이스 타입의 객체를 람다식으로 생성할 수 있다.
-    // 람다식은 이름없는 메소드라 할 수 있다.
-    // 람다식을 이용하는 이유는 간결하기 때문이다.
-    // 람다식을 이용하는 메소드가 필요한 곳에 간단히 메소드를 보낼 수 있다.
-    // 람다식은 함수형 프로그래밍을 자바에 도입한 것이다.
-    // 람다식은 오직 하나의 추상 메소드를 가지는 인터페이스 타입의 객체를 요구하는
-    // 메소드의 인자로 전달될 수 있다.
-    // 람다식의 문법
-    // (arg1, arg2, ...) -> { body }
-    // (type1 arg1, type2 arg2, ...) -> { body }
 
-    // 위의 무명클래스를 람다식으로 구현해보자.
-    // printPersons(list, (Person p) -> p.getGender() == Sex.MALE );
+    // 오직 하나의 추상메소드만 가지는 인터페이스 타입의 객체를 람다식으로 생성할 수 있다. 
+    // 람다식은 이름없는 메소드라 할 수 있다. 
+    // 람다식을 이용하는 이유는 간결하기 때문이다. 
+    // 람다식을 이용하는 메소드가 필요한 곳에 간단히 메소들 보낼 수 있다. 
+    // 람다식은 함수형 프로그래밍을 자바에 도입한 것이다. 
+    // 람다식은 오직 하나의 추상 메소드를 가지는 인터페이스 타입의 객체를 요구하는
+    // 메소드의 인자로 전달될 수 있다. 
+    // 람다식의 문법 
+    // (arg1, arg2, ...) -> { body }
+    // (type1 arg1, type2 arg2, ...) -> {body}
+
+    // 위의 무명클래스를 람다식으로 구현해보자. 
     // printPersons(list, (p)->{return p.getGender() == Sex.MALE;});
 
-    // 람다식의 body가 return 문 하나만으로 구성되어 있으면 {}도 생략할 수 있다.
-    // printPersons(list, (p) -> p.getGender() == Sex.MALE);
-    
+    // printPersons(list, (Person p)->{return p.getGender() == Sex.MALE;});
+
+    // 람다식의 body가 return 문 하나만으로 구성되어 있으면 return 키워드, {}, 문장 끝의 
+    // 세미콜론(;)도 생략할 수 있다. 
+    // printPersons(list, (p)-> p.getGender() == Sex.MALE);
+
     // printPersons(list, (p)->{
-    //   System.out.println(p.getName());
+    //   System.out.println(p.getName()); 
     //   return p.getAge() >= 30;
     // });
 
     // 람다식의 매개변수가 오직 하나일 때는 매개변수를 둘러싸는 () 생략할 수 있다.
-    // printPersons(list, p ->{
+    // printPersons(list, p->{
     //   System.out.println(p.getName());
     //   return p.getAge() >= 30;
     // });
 
-    // 람다식을 이용해서 printPersons 메소드를 호출하고,
-    // 그 결과로 나이가 20에서 30 사이의 여자만 출력되도록 구현하라.
-    printPersons(list, p -> p.getGender() == Sex.FEMALE && p.getAge() >= 20 && p.getAge() <= 30);
+    // 람다식을 이용해서 printPersons 메소드를 호출하고, 
+    // 그 결과로 나이 20에서 30살 사이의 여자만 출력되도록 구현하라.
+    printPersons(list, p->p.getGender()==Sex.FEMALE && p.getAge() >= 20 && p.getAge()<=30);
 
   }
 
@@ -137,7 +140,7 @@ class CheckPersonFemale10to20 implements CheckPerson {
   }
 }
 
-class CheckPersonMale implements CheckPerson {
+class CheckMale implements CheckPerson {
   public boolean test(Person p) {
     return p.getGender() == Sex.MALE;
   }
